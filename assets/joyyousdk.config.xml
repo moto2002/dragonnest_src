@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PlatformSettings>
+    <WorkEnv name="Unity3D" />
+	<AndroidSDK>
+		<ThirdPlatform current="yyb">
+		    <Platform name="xiaomi" className="com.joyyou.common.Xiaomi.XiaomiSDKImpl" />
+			<Platform name="UC" className="com.joyyou.common.UC.UCSDKImpl" />
+			<Platform name="wandoujia" className="com.joyyou.common.wdj.wandoujiaSDKImpl" />
+			<Platform name="muzhiwan" className="com.joyyou.common.mzw.muzhiwanSDKImpl" />
+			<Platform name="huawei" className="com.joyyou.common.huawei.huaweiSDKImpl" />
+			<Platform name="qihoo360" className="com.joyyou.common.qihoo360.SDK360Impl" />
+			<Platform name="huanlesdk" className="com.joyyou.common.Huanle.HuanleSDKImpl" />
+			<Platform name="oppo" className="com.joyyou.common.oppo.OppoSDKImpl" />
+			<Platform name="yyb" className="com.joyyou.common.TencentMSDK.TencentMSDKImpl" />
+			<Platform name="baidu91" className="com.joyyou.common.Baidu91.Baidu91Impl" />
+			<Platform name="downjoy" className="com.joyyou.common.downjoy.DownjoySDKImpl" />
+			<Platform name="meizu" className="com.joyyou.common.meizu.MeizuSDKImpl" />
+			<Platform name="4399" className="com.joyyou.common.m4399.M4399SDKImpl" />
+			<Platform name="huanle" className="com.joyyou.common.Huanle.HuanleSDKImpl"/>
+		</ThirdPlatform>
+		<AdvPlatform>
+		</AdvPlatform>
+		<StatisticsSuppose current="all">
+		    <Statistical name="talkingData" className="com.joyyou.statistics.TalkingData.TalkingDateStatisticalData"/>
+		    <!--<Statistical name="TencentCloud" className="com.joyyou.statistics.TencentCloud.TencentCloudImpl"/> -->
+		</StatisticsSuppose>
+		<Components>
+		    <GameRecord current="RecNow">
+				<GR name="RecNow" className="com.joyyou.components.RecNow.RecNowImpl" />
+			</GameRecord>
+			<AdTracking current="all">
+			    <ADT name="inmobi" className="com.joyyou.components.inmobi.inmobiImpl" />
+			    <ADT name="google" className="com.joyyou.components.Google.GoogleAdvImpl" />
+			</AdTracking>
+		</Components>
+		<Gitfs>
+		    <TencentYYB>
+		        <item name="" taskid="500" userip="" />
+		    </TencentYYB>
+		</Gitfs>
+	</AndroidSDK>
+</PlatformSettings>

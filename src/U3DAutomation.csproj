@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{143A9AB0-7691-4052-8983-98F58A7339D5}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>U3DAutomation</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="UnityEngine" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="a.cs" />
+    <Compile Include="aa.cs" />
+    <Compile Include="ab.cs" />
+    <Compile Include="b.cs" />
+    <Compile Include="BlockQueue.cs" />
+    <Compile Include="c.cs" />
+    <Compile Include="d.cs" />
+    <Compile Include="DotfuscatorAttribute.cs" />
+    <Compile Include="Dynamic\ThirdManager.cs" />
+    <Compile Include="e.cs" />
+    <Compile Include="f.cs" />
+    <Compile Include="g.cs" />
+    <Compile Include="h.cs" />
+    <Compile Include="i.cs" />
+    <Compile Include="j.cs" />
+    <Compile Include="k.cs" />
+    <Compile Include="l.cs" />
+    <Compile Include="m.cs" />
+    <Compile Include="n.cs" />
+    <Compile Include="o.cs" />
+    <Compile Include="p.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="q.cs" />
+    <Compile Include="r.cs" />
+    <Compile Include="s.cs" />
+    <Compile Include="t.cs" />
+    <Compile Include="u.cs" />
+    <Compile Include="v.cs" />
+    <Compile Include="w.cs" />
+    <Compile Include="WeTest.U3DAutomation\AndroidJavaObjectWrapper.cs" />
+    <Compile Include="WeTest.U3DAutomation\AppNetReq.cs" />
+    <Compile Include="WeTest.U3DAutomation\AppNetTrafficRes.cs" />
+    <Compile Include="WeTest.U3DAutomation\AutoBound.cs" />
+    <Compile Include="WeTest.U3DAutomation\AutoTravelNodeType.cs" />
+    <Compile Include="WeTest.U3DAutomation\BetterList.cs" />
+    <Compile Include="WeTest.U3DAutomation\BoundInfo.cs" />
+    <Compile Include="WeTest.U3DAutomation\Cmd.cs" />
+    <Compile Include="WeTest.U3DAutomation\ComponentField.cs" />
+    <Compile Include="WeTest.U3DAutomation\CoordinateTool.cs" />
+    <Compile Include="WeTest.U3DAutomation\CoordinateType.cs" />
+    <Compile Include="WeTest.U3DAutomation\CrashMonitor.cs" />
+    <Compile Include="WeTest.U3DAutomation\CustomCaller.cs" />
+    <Compile Include="WeTest.U3DAutomation\CustomHandler.cs" />
+    <Compile Include="WeTest.U3DAutomation\DumpTree.cs" />
+    <Compile Include="WeTest.U3DAutomation\ElementInfo.cs" />
+    <Compile Include="WeTest.U3DAutomation\ExporterFunc.cs" />
+    <Compile Include="WeTest.U3DAutomation\GameObjectManager.cs" />
+    <Compile Include="WeTest.U3DAutomation\GUINode.cs" />
+    <Compile Include="WeTest.U3DAutomation\IJsonWrapper.cs" />
+    <Compile Include="WeTest.U3DAutomation\ImporterFunc.cs" />
+    <Compile Include="WeTest.U3DAutomation\InteractElement.cs" />
+    <Compile Include="WeTest.U3DAutomation\InteractStatus.cs" />
+    <Compile Include="WeTest.U3DAutomation\JsonData.cs" />
+    <Compile Include="WeTest.U3DAutomation\JsonException.cs" />
+    <Compile Include="WeTest.U3DAutomation\JsonMapper.cs" />
+    <Compile Include="WeTest.U3DAutomation\JsonMockWrapper.cs" />
+    <Compile Include="WeTest.U3DAutomation\JsonParser.cs" />
+    <Compile Include="WeTest.U3DAutomation\JsonReader.cs" />
+    <Compile Include="WeTest.U3DAutomation\JsonToken.cs" />
+    <Compile Include="WeTest.U3DAutomation\JsonType.cs" />
+    <Compile Include="WeTest.U3DAutomation\JsonWriter.cs" />
+    <Compile Include="WeTest.U3DAutomation\Lexer.cs" />
+    <Compile Include="WeTest.U3DAutomation\MotionEventAction.cs" />
+    <Compile Include="WeTest.U3DAutomation\PathNode.cs" />
+    <Compile Include="WeTest.U3DAutomation\Point.cs" />
+    <Compile Include="WeTest.U3DAutomation\Rectangle.cs" />
+    <Compile Include="WeTest.U3DAutomation\ReflectionTools.cs" />
+    <Compile Include="WeTest.U3DAutomation\Response.cs" />
+    <Compile Include="WeTest.U3DAutomation\ResponseStatus.cs" />
+    <Compile Include="WeTest.U3DAutomation\TextSetter.cs" />
+    <Compile Include="WeTest.U3DAutomation\TouchData.cs" />
+    <Compile Include="WeTest.U3DAutomation\TouchEvent.cs" />
+    <Compile Include="WeTest.U3DAutomation\TouchNotify.cs" />
+    <Compile Include="WeTest.U3DAutomation\TouchType.cs" />
+    <Compile Include="WeTest.U3DAutomation\U3DAutomationBehaviour.cs" />
+    <Compile Include="WeTest.U3DAutomation\UINode.cs" />
+    <Compile Include="WeTest.U3DAutomation\VersionData.cs" />
+    <Compile Include="WeTest.U3DAutomation\VersionInfo.cs" />
+    <Compile Include="WeTest.U3DAutomation\WorldBound.cs" />
+    <Compile Include="WeTest.U3DAutomation\WrapperFactory.cs" />
+    <Compile Include="x.cs" />
+    <Compile Include="y.cs" />
+    <Compile Include="z.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{7D2FF5E6-5C57-4607-8596-D51D6154EB8B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>UILib</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UILib\AnimFinishedEventHandler.cs" />
+    <Compile Include="UILib\ButtonClickEventHandler.cs" />
+    <Compile Include="UILib\ButtonDragEventHandler.cs" />
+    <Compile Include="UILib\ButtonPressEventHandler.cs" />
+    <Compile Include="UILib\CheckBoxOnCheckEventHandler.cs" />
+    <Compile Include="UILib\CollectFinishEventHandler.cs" />
+    <Compile Include="UILib\ComboboxClickEventHandler.cs" />
+    <Compile Include="UILib\HyperLinkClickEventHandler.cs" />
+    <Compile Include="UILib\InputChangeEventHandler.cs" />
+    <Compile Include="UILib\InputKeyTriggeredEventHandler.cs" />
+    <Compile Include="UILib\InputSubmitEventHandler.cs" />
+    <Compile Include="UILib\IUIDummy.cs" />
+    <Compile Include="UILib\IUIPanel.cs" />
+    <Compile Include="UILib\IUIRect.cs" />
+    <Compile Include="UILib\IUIWidget.cs" />
+    <Compile Include="UILib\IXRadarMap.cs" />
+    <Compile Include="UILib\IXUIAtlas.cs" />
+    <Compile Include="UILib\IXUIBehaviour.cs" />
+    <Compile Include="UILib\IXUIButton.cs" />
+    <Compile Include="UILib\IXUICD.cs" />
+    <Compile Include="UILib\IXUICenterOnClick.cs" />
+    <Compile Include="UILib\IXUICheckBox.cs" />
+    <Compile Include="UILib\IXUIComboBox.cs" />
+    <Compile Include="UILib\IXUIDlg.cs" />
+    <Compile Include="UILib\IXUIDragDropItem.cs" />
+    <Compile Include="UILib\IXUIInput.cs" />
+    <Compile Include="UILib\IXUIInterface.cs" />
+    <Compile Include="UILib\IXUILabel.cs" />
+    <Compile Include="UILib\IXUILabelSymbol.cs" />
+    <Compile Include="UILib\IXUIList.cs" />
+    <Compile Include="UILib\IXUIListItem.cs" />
+    <Compile Include="UILib\IXUILongPress.cs" />
+    <Compile Include="UILib\IXUIObject.cs" />
+    <Compile Include="UILib\IXUIPanel.cs" />
+    <Compile Include="UILib\IXUIPlayTweenGroup.cs" />
+    <Compile Include="UILib\IXUIPopupList.cs" />
+    <Compile Include="UILib\IXUIProgress.cs" />
+    <Compile Include="UILib\IXUIScrollBar.cs" />
+    <Compile Include="UILib\IXUIScrollView.cs" />
+    <Compile Include="UILib\IXUISlider.cs" />
+    <Compile Include="UILib\IXUISprite.cs" />
+    <Compile Include="UILib\IXUISpriteAnimation.cs" />
+    <Compile Include="UILib\IXUISthCollector.cs" />
+    <Compile Include="UILib\IXUITable.cs" />
+    <Compile Include="UILib\IXUITextList.cs" />
+    <Compile Include="UILib\IXUITexture.cs" />
+    <Compile Include="UILib\IXUITool.cs" />
+    <Compile Include="UILib\IXUITweenTool.cs" />
+    <Compile Include="UILib\IXUIWrapContent.cs" />
+    <Compile Include="UILib\LabelClickEventHandler.cs" />
+    <Compile Include="UILib\LabelSymbolClickEventHandler.cs" />
+    <Compile Include="UILib\ListDoubleClickEventHandler.cs" />
+    <Compile Include="UILib\ListSelectEventHandler.cs" />
+    <Compile Include="UILib\LoadUIAsynEventHandler.cs" />
+    <Compile Include="UILib\LoadUIFinishedEventHandler.cs" />
+    <Compile Include="UILib\OnAfterRepostion.cs" />
+    <Compile Include="UILib\OnDropReleaseEventHandler.cs" />
+    <Compile Include="UILib\OnDropStartEventHandler.cs" />
+    <Compile Include="UILib\OnTweenFinishEventHandler.cs" />
+    <Compile Include="UILib\RefreshRenderQueueCb.cs" />
+    <Compile Include="UILib\ScrollBarChangeEventHandler.cs" />
+    <Compile Include="UILib\ScrollBarDragFinishedEventHandler.cs" />
+    <Compile Include="UILib\SliderClickEventHandler.cs" />
+    <Compile Include="UILib\SliderValueChangeEventHandler.cs" />
+    <Compile Include="UILib\SpriteAnimationFinishCallback.cs" />
+    <Compile Include="UILib\SpriteClickEventHandler.cs" />
+    <Compile Include="UILib\SpriteDragEventHandler.cs" />
+    <Compile Include="UILib\SpritePressEventHandler.cs" />
+    <Compile Include="UILib\SthArrivedEventHandler.cs" />
+    <Compile Include="UILib\TextureClickEventHandler.cs" />
+    <Compile Include="UILib\WrapItemInitEventHandler.cs" />
+    <Compile Include="UILib\WrapItemUpdateEventHandler.cs" />
+    <Compile Include="XUIObjectBase.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

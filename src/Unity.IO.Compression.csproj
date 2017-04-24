@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{4725A4BF-893D-4ABE-955C-1C3341E352CC}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Unity.IO.Compression</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="MatchState.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Unity.IO.Compression\BlockType.cs" />
+    <Compile Include="Unity.IO.Compression\CompressionMode.cs" />
+    <Compile Include="Unity.IO.Compression\CopyEncoder.cs" />
+    <Compile Include="Unity.IO.Compression\Crc32Helper.cs" />
+    <Compile Include="Unity.IO.Compression\DeflateInput.cs" />
+    <Compile Include="Unity.IO.Compression\DeflaterManaged.cs" />
+    <Compile Include="Unity.IO.Compression\DeflateStream.cs" />
+    <Compile Include="Unity.IO.Compression\DeflateStreamAsyncResult.cs" />
+    <Compile Include="Unity.IO.Compression\FastEncoder.cs" />
+    <Compile Include="Unity.IO.Compression\FastEncoderStatics.cs" />
+    <Compile Include="Unity.IO.Compression\FastEncoderWindow.cs" />
+    <Compile Include="Unity.IO.Compression\GZipConstants.cs" />
+    <Compile Include="Unity.IO.Compression\GZipDecoder.cs" />
+    <Compile Include="Unity.IO.Compression\GZipFormatter.cs" />
+    <Compile Include="Unity.IO.Compression\GZipStream.cs" />
+    <Compile Include="Unity.IO.Compression\HuffmanTree.cs" />
+    <Compile Include="Unity.IO.Compression\IDeflater.cs" />
+    <Compile Include="Unity.IO.Compression\IFileFormatReader.cs" />
+    <Compile Include="Unity.IO.Compression\IFileFormatWriter.cs" />
+    <Compile Include="Unity.IO.Compression\Inflater.cs" />
+    <Compile Include="Unity.IO.Compression\InflaterState.cs" />
+    <Compile Include="Unity.IO.Compression\InputBuffer.cs" />
+    <Compile Include="Unity.IO.Compression\InvalidDataException.cs" />
+    <Compile Include="Unity.IO.Compression\Match.cs" />
+    <Compile Include="Unity.IO.Compression\OutputBuffer.cs" />
+    <Compile Include="Unity.IO.Compression\OutputWindow.cs" />
+    <Compile Include="Unity.IO.Compression\SR.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

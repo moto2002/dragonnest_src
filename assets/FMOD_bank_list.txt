@@ -1,0 +1,13 @@
+Cutscene.bank
+CutscenePatch1.bank
+Cutscene_VO.bank
+Master_Bank.bank
+Master_Bank.strings.bank
+monster.bank
+MonsterPatch1.bank
+Music1.bank
+Patch20170221.bank
+player.bank
+UI.bank
+VO.bank
+VOPatch1.bank
