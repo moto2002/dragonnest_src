@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ProjectGuid>{D03A3FC0-C112-45DF-9965-0744B2491EB5}</ProjectGuid>
@@ -25,15 +25,16 @@
     <Optimize>true</Optimize>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BehaviorDesignerRuntime" />
-    <Reference Include="UnityEngine" />
-    <Reference Include="System.Core" />
+    <Reference Include="BehaviorDesignerRuntime">
+      <HintPath>..\assets\bin\Data\Managed\BehaviorDesignerRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\assets\bin\Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>..\assets\bin\Data\Managed\System.Core.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
-    <Reference Include="UILib" />
-    <Reference Include="XUtliPoolLib" />
-    <Reference Include="Assembly-CSharp-firstpass" />
-    <Reference Include="PandoraLib" />
-    <Reference Include="Unity.IO.Compression" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ActionMove.cs" />
@@ -1316,6 +1317,28 @@
     <Compile Include="XVideoMgr.cs" />
     <Compile Include="XWall.cs" />
     <Compile Include="YBillboard.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{01fba51e-ad06-4ebd-add1-639cea7869b1}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
+    <ProjectReference Include="PandoraLib.csproj">
+      <Project>{281abc00-85df-4840-be7c-2c7eb52d797b}</Project>
+      <Name>PandoraLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="UILib.csproj">
+      <Project>{7d2ff5e6-5c57-4607-8596-d51d6154eb8b}</Project>
+      <Name>UILib</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.IO.Compression.csproj">
+      <Project>{4725a4bf-893d-4abe-955c-1c3341e352cc}</Project>
+      <Name>Unity.IO.Compression</Name>
+    </ProjectReference>
+    <ProjectReference Include="XUtliPoolLib.csproj">
+      <Project>{72bc0f86-0f40-4c20-8d4b-2130ab408de0}</Project>
+      <Name>XUtliPoolLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

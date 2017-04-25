@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ProjectGuid>{281ABC00-85DF-4840-BE7C-2C7EB52D797B}</ProjectGuid>
@@ -25,8 +25,12 @@
     <Optimize>true</Optimize>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="UnityEngine" />
-    <Reference Include="System.Core" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\assets\bin\Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>..\assets\bin\Data\Managed\System.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="com.tencent.pandora\Logger.cs" />

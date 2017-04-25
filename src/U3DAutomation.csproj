@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ProjectGuid>{143A9AB0-7691-4052-8983-98F58A7339D5}</ProjectGuid>
@@ -26,9 +26,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="UnityEngine" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\assets\bin\Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml" />
-    <Reference Include="System.Core" />
+    <Reference Include="System.Core">
+      <HintPath>..\assets\bin\Data\Managed\System.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="a.cs" />
